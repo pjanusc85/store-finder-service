@@ -32,9 +32,10 @@ public class StoreService {
         List<StoreEntity> allEntitiesContent = new ArrayList<>();
         StoreEntity e = new StoreEntity();
         e.setId(1L);
-        e.setName("Test");
-        e.setLatitude(1.123123f);
-        e.setLongitude(1.232323f);
+        e.setThumbnailUrl("https://geo1.ggpht.com/cbk?panoid=wBn05OfIlQeqKASUQpZq5w&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=160.78165&pitch=0&thumbfov=100");
+        e.setName("Insular Life");
+        e.setLatitude(10.320248f);
+        e.setLongitude(123.906024f);
         allEntitiesContent.add(e);
 
         List<Store> allStores = allEntitiesContent.stream().map(entity -> new Store(
