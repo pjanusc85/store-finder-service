@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StoreLocatorServiceApplication {
+public class StoreFinderServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StoreLocatorServiceApplication.class, args);
+		SpringApplication.run(StoreFinderServiceApplication.class, args);
 	}
 }

@@ -32,6 +32,7 @@ public class StoreService {
 
         List<StoreEntity> allEntitiesContent = new ArrayList<>();
         StoreEntity e = new StoreEntity();
+        e.setId(1L);
         e.setName("Test");
         e.setLatitude(1.123123f);
         e.setLongitude(1.232323f);
