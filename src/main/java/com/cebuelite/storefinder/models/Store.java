@@ -3,17 +3,18 @@ package com.cebuelite.storefinder.models;
 /**
  * Created by paul on 6/28/17.
  */
-public class Node {
+public class Store {
 
+    private String id;
     private String name;
     private String thumbnailUrl;
     private String fullAddressDescription;
     private String contactPerson;
     private String contactNumber;
-    private NodeLocation location;
+    private StoreLocation location;
 
-    public Node() {}
-    public Node(String name, String thumbnailUrl, String fullAddressDescription, String contactPerson, String contactNumber, NodeLocation location) {
+    public Store() {}
+    public Store(String name, String thumbnailUrl, String fullAddressDescription, String contactPerson, String contactNumber, StoreLocation location) {
         this.name = name;
         this.thumbnailUrl = thumbnailUrl;
         this.fullAddressDescription = fullAddressDescription;
@@ -62,11 +63,11 @@ public class Node {
         this.contactNumber = contactNumber;
     }
 
-    public NodeLocation getLocation() {
+    public StoreLocation getLocation() {
         return location;
     }
 
-    public void setLocation(NodeLocation location) {
+    public void setLocation(StoreLocation location) {
         this.location = location;
     }
 }

@@ -1,11 +1,11 @@
 package com.cebuelite.storefinder.models;
 
-public class NodeLocation {
+public class StoreLocation {
 
     private float latitude;
 
-    public NodeLocation() {}
-    public NodeLocation(float latitude, float longitude) {
+    public StoreLocation() {}
+    public StoreLocation(float latitude, float longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
     }

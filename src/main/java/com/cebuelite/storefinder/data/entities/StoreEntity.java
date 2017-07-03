@@ -9,7 +9,7 @@ import javax.persistence.Id;
  *
  */
 @Entity
-public class NodeEntity {
+public class StoreEntity {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -22,7 +22,7 @@ public class NodeEntity {
     private float latitude;
     private float longitude;
 
-    public NodeEntity() {}
+    public StoreEntity() {}
 
     public Long getId() {
         return id;

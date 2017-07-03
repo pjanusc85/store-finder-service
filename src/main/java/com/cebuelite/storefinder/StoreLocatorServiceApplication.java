@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NodeLocatorServiceApplication {
+public class StoreLocatorServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NodeLocatorServiceApplication.class, args);
+		SpringApplication.run(StoreLocatorServiceApplication.class, args);
 	}
 }
