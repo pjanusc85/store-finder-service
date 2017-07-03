@@ -20,7 +20,7 @@ public class NodesController {
     @Autowired
     private NodeService nodeService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "", method = RequestMethod.GET, produces = "application/json")
     public Page<Node> getNodes() {
         return nodeService.getAllNodes(null);
     }
