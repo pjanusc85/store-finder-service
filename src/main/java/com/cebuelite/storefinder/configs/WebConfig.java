@@ -14,7 +14,7 @@ public class WebConfig {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/stores").allowedOrigins("https://tubig-express.herokuapp.com");
+                registry.addMapping("/stores").allowedOrigins("http://localhost:3000","https://tubig-express.herokuapp.com");
             }
         };
     }
