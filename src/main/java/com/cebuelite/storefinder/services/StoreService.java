@@ -37,7 +37,9 @@ public class StoreService {
         e.setLongitude(1.232323f);
         allEntitiesContent.add(e);
 
-        List<Store> allStores = allEntitiesContent.stream().map(entity -> new Store(entity.getName(),
+        List<Store> allStores = allEntitiesContent.stream().map(entity -> new Store(
+                entity.getId(),
+                entity.getName(),
                 entity.getThumbnailUrl(),
                 entity.getFullAddressDescription(),
                 entity.getContactPerson(),

@@ -5,7 +5,7 @@ package com.cebuelite.storefinder.models;
  */
 public class Store {
 
-    private String id;
+    private long id;
     private String name;
     private String thumbnailUrl;
     private String fullAddressDescription;
@@ -14,13 +14,24 @@ public class Store {
     private StoreLocation location;
 
     public Store() {}
-    public Store(String name, String thumbnailUrl, String fullAddressDescription, String contactPerson, String contactNumber, StoreLocation location) {
+    public Store(long id, String name, String thumbnailUrl, String fullAddressDescription, String contactPerson, String contactNumber, StoreLocation location) {
+        this.id = id;
         this.name = name;
         this.thumbnailUrl = thumbnailUrl;
         this.fullAddressDescription = fullAddressDescription;
         this.contactPerson = contactPerson;
         this.contactNumber = contactNumber;
         this.location = location;
+    }
+
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
