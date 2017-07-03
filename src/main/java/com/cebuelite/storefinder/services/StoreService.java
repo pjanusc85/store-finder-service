@@ -36,6 +36,9 @@ public class StoreService {
         e.setName("Insular Life");
         e.setLatitude(10.320248f);
         e.setLongitude(123.906024f);
+        e.setFullAddressDescription("Suite 1204, 12th Floor, Insular Life Business Centre, Biliran Road, Cebu Business Park, Cebu City, 6000 Cebu");
+        e.setContactNumber("(032) 268-3206");
+        e.setContactPerson("Billie Duterte");
         allEntitiesContent.add(e);
 
         List<Store> allStores = allEntitiesContent.stream().map(entity -> new Store(
