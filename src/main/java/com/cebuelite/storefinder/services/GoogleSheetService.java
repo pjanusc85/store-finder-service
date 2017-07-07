@@ -59,6 +59,7 @@ public class GoogleSheetService {
             storeEntity.setContactNumber(rowValue.get(columnHeaders.indexOf("Phone")));
             storeEntity.setThumbnailUrl(rowValue.get(columnHeaders.indexOf("Thumbnail")));
             storeEntity.setOpeningHours(rowValue.get(columnHeaders.indexOf("Opening Hours")));
+            storeEntity.setId(i);
             allStores.add(storeEntity);
         }
         return allStores;
