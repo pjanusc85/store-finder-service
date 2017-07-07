@@ -11,6 +11,16 @@ public class Store {
     private String fullAddressDescription;
     private String contactPerson;
     private String contactNumber;
+
+    public String getOpeningHours() {
+        return openingHours;
+    }
+
+    public void setOpeningHours(String openingHours) {
+        this.openingHours = openingHours;
+    }
+
+    private String openingHours;
     private StoreLocation location;
 
     public Store() {}

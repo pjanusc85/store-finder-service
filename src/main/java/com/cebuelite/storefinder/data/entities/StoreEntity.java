@@ -21,6 +21,15 @@ public class StoreEntity {
     private String contactNumber;
     private float latitude;
     private float longitude;
+    private String openingHours;
+
+    public String getOpeningHours() {
+        return openingHours;
+    }
+
+    public void setOpeningHours(String openingHours) {
+        this.openingHours = openingHours;
+    }
 
     public StoreEntity() {}
 
